@@ -1,0 +1,26 @@
+{
+  "name": "essence-chat",
+  "version": "0.1.0",
+  "description": "AI shopping assistant for a flower-essence Shopify store",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test:local": "tsx scripts/test-local.ts",
+    "eval": "tsx scripts/eval.ts",
+    "adversarial": "tsx scripts/adversarial.ts",
+    "test:auth": "tsx scripts/test-auth.ts",
+    "review": "tsx scripts/review.ts",
+    "summarize": "tsx scripts/summarize-cases.ts",
+    "sync:catalog": "tsx scripts/sync-catalog.ts",
+    "build:combinations": "tsx scripts/build-combinations.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

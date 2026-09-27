@@ -1,0 +1,24 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run sync:catalog || true; npm run build:combinations || true",
+  "outputDirectory": "public",
+  "functions": {
+    "api/chat.ts": {
+      "maxDuration": 60,
+      "includeFiles": "data/**"
+    },
+    "api/chat-v2.ts": {
+      "maxDuration": 60,
+      "includeFiles": "data/**"
+    },
+    "api/health.ts": {
+      "includeFiles": "data/**"
+    },
+    "api/product.ts": {
+      "includeFiles": "data/**"
+    },
+    "api/webhooks/products-update.ts": {
+      "maxDuration": 30
+    }
+  }
+}

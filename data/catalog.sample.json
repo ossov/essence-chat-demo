@@ -1,0 +1,66 @@
+{
+  "storeName": "Essence Alchemy",
+  "products": [
+    {
+      "handle": "abundance",
+      "title": "Abundance",
+      "url": "/products/abundance",
+      "tags": ["Abundance", "Abundance Consciousness", "Affluence", "Prosperity", "Fullness", "Lack", "Scarcity", "Poverty consciousness", "Potential", "Unlimited Potential", "Separation", "Infinite Possibilities", "Manifestation"],
+      "essenceType": "Essence Combinations",
+      "helpsWith": "Using Abundance we find our rightful place in the field of infinite possibilities and consciously co-create our reality.",
+      "resonance": "Infinite Possibilities",
+      "essenceSummary": "Manifest our intentions at every level of our lives",
+      "keyAttractors": "Abundance, Affluence, Prosperity, Fullness, Unlimited, Potential",
+      "keyChallenges": "Poverty Consciousness, Separation, Lack, Scarcity",
+      "mental": "Connect to the field of Infinite Possibilities",
+      "emotional": "Fear of scarcity, Fear of success",
+      "spiritual": "Unlimited potential",
+      "ingredients": "Proprietary Formula"
+    },
+    {
+      "handle": "tranquility",
+      "title": "Tranquility",
+      "url": "/products/tranquility",
+      "tags": ["Overwhelm", "Worry", "Stress", "Calm", "Calming", "Peace", "Peacefulness", "Relaxation", "Tranquility", "Busy-ness", "Tension"],
+      "essenceType": "Essence Combinations",
+      "helpsWith": "Tranquility helps quiet a racing mind and settle an overstimulated nervous system so rest can return.",
+      "resonance": "Inner Peace",
+      "essenceSummary": "Find stillness beneath the noise of a busy, overwhelmed mind",
+      "keyAttractors": "Calm, Peace, Stillness, Rest, Ease",
+      "keyChallenges": "Overwhelm, Worry, Mental busy-ness, Sleeplessness, Tension",
+      "mental": "Quieten looping thoughts",
+      "emotional": "Anxiety, Feeling frazzled and unable to switch off",
+      "ingredients": "Proprietary Formula"
+    },
+    {
+      "handle": "tender-heart",
+      "title": "Tender Heart",
+      "url": "/products/tender-heart",
+      "tags": ["Grief", "Death of a loved one", "Sadness", "Comfort", "Healing and Nurturing the Heart", "Heart", "Letting go", "Emotional Wounds"],
+      "essenceType": "Flower & Tree",
+      "helpsWith": "Tender Heart is a gentle companion through grief and loss, easing the ache of longing and helping sorrow move through.",
+      "resonance": "Healing the Heart",
+      "essenceSummary": "Comfort and nurture the heart through bereavement and heartbreak",
+      "keyAttractors": "Comfort, Healing, Acceptance, Peace",
+      "keyChallenges": "Grief, Loss, Heartbreak, Sorrow, Longing",
+      "emotional": "Sadness, Missing someone, Emotional pain",
+      "spiritual": "Letting go with love",
+      "ingredients": "Proprietary Formula"
+    },
+    {
+      "handle": "steadiness",
+      "title": "Steadiness",
+      "url": "/products/steadiness",
+      "tags": ["Anxiety", "Fear", "Courage", "Steadiness", "Strength", "Security", "Grounding", "Confidence", "Stress"],
+      "essenceType": "Gem & Crystal",
+      "helpsWith": "Steadiness offers solid ground beneath the nerves before something daunting, so courage has a floor to stand on.",
+      "resonance": "Grounded Courage",
+      "essenceSummary": "Meet fear and pressure from a steady, centred place",
+      "keyAttractors": "Courage, Confidence, Stability, Security",
+      "keyChallenges": "Anxiety, Fear, Nervousness, Dread, Stage fright",
+      "mental": "Steady focus under pressure",
+      "emotional": "Nervousness, Anticipatory fear",
+      "ingredients": "Proprietary Formula"
+    }
+  ]
+}

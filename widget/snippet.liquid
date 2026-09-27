@@ -1,0 +1,19 @@
+{%- comment -%}
+  Essence Chat widget loader.
+
+  Fast-prototype path:
+    1. Upload widget/essence-chat.js to your theme's assets (Online Store →
+       Themes → ⋯ → Edit code → Assets → Add a new asset), OR host it on your
+       backend / a CDN and point `src` at that URL.
+    2. Save this file as snippets/essence-chat.liquid.
+    3. Add  {% render 'essence-chat' %}  near the end of layout/theme.liquid,
+       just before </body>.
+
+  The data-endpoint must match the App Proxy subpath you configure in the
+  Shopify Partner dashboard (default below: /apps/essence-chat).
+{%- endcomment -%}
+<script
+  src="{{ 'essence-chat.js' | asset_url }}"
+  data-endpoint="/apps/essence-chat"
+  data-greeting="Tell me how you're feeling, and I'll help you find the right essence."
+  defer></script>

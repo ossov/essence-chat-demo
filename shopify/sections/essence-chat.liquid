@@ -1,0 +1,86 @@
+{%- comment -%}
+  Essence Chat — theme section.
+
+  Setup (one-time):
+    1. Theme editor → ⋯ → Edit code → Assets → Add a new asset → upload
+       widget/essence-chat.js  (filename must stay essence-chat.js).
+    2. Edit code → Sections → Add a new section → name it "essence-chat" →
+       paste this file's contents → Save.
+    3. Open the page you want it on in the theme editor → Add section →
+       "Essence Chat". Configure the settings in the sidebar.
+
+  Display mode:
+    - Inline block: the chat renders here, in the page, where the section sits.
+    - Floating button: a bubble floats over the page (bottom-left / bottom-right).
+{%- endcomment -%}
+
+<div id="essence-chat-{{ section.id }}" class="essence-chat-mount"></div>
+
+<script
+  src="{{ 'essence-chat.js' | asset_url }}"
+  data-mode="{{ section.settings.mode }}"
+  data-mount="#essence-chat-{{ section.id }}"
+  data-endpoint="{{ section.settings.endpoint | escape }}"
+  data-greeting="{{ section.settings.greeting | escape }}"
+  data-heading="{{ section.settings.heading | escape }}"
+  data-accent="{{ section.settings.accent }}"
+  data-position="{{ section.settings.position }}"
+  defer></script>
+
+{% schema %}
+{
+  "name": "Essence Chat",
+  "settings": [
+    {
+      "type": "select",
+      "id": "mode",
+      "label": "Display mode",
+      "options": [
+        { "value": "inline", "label": "Inline block (on the page)" },
+        { "value": "float", "label": "Floating button" }
+      ],
+      "default": "inline"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Panel header",
+      "default": "How are you feeling?"
+    },
+    {
+      "type": "textarea",
+      "id": "greeting",
+      "label": "Opening greeting",
+      "default": "Tell me how you're feeling, and I'll help you find the right essence."
+    },
+    {
+      "type": "text",
+      "id": "endpoint",
+      "label": "Backend endpoint URL",
+      "default": "/apps/essence-chat/chat-v2",
+      "info": "Routes through the Shopify App Proxy. Leave as-is. The backend only accepts proxy-signed requests, so a direct https://...vercel.app URL will be rejected."
+    },
+    {
+      "type": "color",
+      "id": "accent",
+      "label": "Accent color",
+      "default": "#5b6b4f"
+    },
+    {
+      "type": "header",
+      "content": "Floating button settings"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Button position",
+      "options": [
+        { "value": "left", "label": "Bottom left" },
+        { "value": "right", "label": "Bottom right" }
+      ],
+      "default": "left"
+    }
+  ],
+  "presets": [{ "name": "Essence Chat" }]
+}
+{% endschema %}
